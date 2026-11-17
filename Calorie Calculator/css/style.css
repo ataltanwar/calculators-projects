@@ -1,0 +1,142 @@
+body{
+    font-family: inter;
+}
+
+h1{
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}  
+
+form{
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+}
+
+ label{
+    display: flex;
+    margin-top: 60px;
+    font-weight: 500;
+}
+
+input{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 4px;
+    width: 140px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    outline: none;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+input[type="radio"]{
+    display: flex;
+}
+
+.row-one{
+    display: flex;
+    gap: 100px; 
+    margin-right: 80px;
+}
+
+.yrs-sym{
+    position: absolute;
+    font-size: 14px;
+    color: #00000070;
+    top: 165px;
+    left: 175px;
+}
+
+.cm-sym{
+    position: absolute;
+    font-size: 14px;
+    color: #00000070;
+    top: 165px;
+    left: 420px;
+}
+
+.radio-btn{
+    display: flex;
+    width: 10px;
+    gap: 50px;
+}
+
+span{
+    margin: 10px 0px 0px -48px;
+}
+
+.row-two{
+    display: flex;
+    gap: 100px;  
+    margin-left: 120px;
+}
+
+.kg-sym{
+    position: absolute;
+    font-size: 14px;
+    color: #00000070;
+    top: 282px;
+    left: 280px;
+}
+
+select{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 4px;
+    width: 150px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    outline: none;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-left: 250px;
+}
+
+#submit{
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+#reset{
+    padding: 8px 20px;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border-radius: 8px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+#result{
+    width: 350px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 16px;
+    margin: 60px auto;
+    display: none;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

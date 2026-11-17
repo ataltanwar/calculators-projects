@@ -1,0 +1,41 @@
+
+body{
+    font-family: inter;
+    background: #92B9F4;
+}
+
+main{
+    display: block;
+    text-align: center;
+}
+
+label{
+    margin: 10px 0px 0px 40px;
+}
+
+input{
+    margin: 40px 20px;
+    padding: 10px 20px 10px 15px;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+button{
+    display: flex;
+    background-color: #2170e7;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 5px auto 60px;
+    padding: 10px 18px;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

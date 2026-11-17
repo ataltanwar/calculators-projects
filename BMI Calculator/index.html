@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+
+        <h1>BMI Calculator</h1>
+
+        <label>Height (in cm)</label>
+        <input type="number" min="0" id="height" placeholder="170">
+
+        <label>Weight (in kg)</label>
+        <input type="number" min="0" id="weight" placeholder="65">
+
+        <button id="button">Calculate</button>
+       
+        <p id="bmi"> </p>
+        <p id="category"> </p>
+        
+
+    </main>
+
+    <script>
+        let height= document.getElementById("height")
+        let weight= document.getElementById("weight")
+        let button= document.getElementById("button")
+        let bmi= document.getElementById("bmi")
+        let category= document.getElementById("category")
+
+        button.addEventListener("click", function(){
+           
+        let result= (weight.value/(height.value*height.value))*10000;
+
+        if (height.value>0) { 
+
+            if(weight.value>0){
+
+            bmi.textContent= "BMI value- " +result.toFixed(0);
+
+            if (result<18.5 && result>0 ){
+                category.textContent= "Category- Underweight"
+            } else if (result<=24.9 && result >=18.5){
+                category.textContent= "Category- Normal"
+            } else if (result<=29.9 && result >=25.0){
+                category.textContent= "Category- Overweight"
+            } else if (result >=30 && result<60){
+                category.textContent= "Category- Obese"
+            } else {
+                category.textContent= "Invalid"
+            }
+            
+        } else{
+             bmi.textContent= "BMI value- Weight not given" ;
+             category.textContent= "Category- Not specified"
+        }
+     }
+         else{
+             bmi.textContent= "BMI value- Height not given" ;
+             category.textContent= "Category- Not specified"
+        }
+        })
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
